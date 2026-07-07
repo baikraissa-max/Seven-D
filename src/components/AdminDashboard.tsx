@@ -418,37 +418,72 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
       )}
 
       {/* Mobile Sticky Header Bar */}
-      <div className="md:hidden flex items-center justify-between px-5 py-4 bg-neutral-950 border-b border-neutral-900 z-20 flex-shrink-0 w-full">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setIsMobileNavOpen(true)}
-            className="p-2 -ml-2 text-gray-400 hover:text-white rounded-lg focus:outline-none hover:bg-white/5 active:scale-95 transition-all"
-          >
-            <Menu size={20} />
-          </button>
-          <span className="text-sm font-black tracking-widest text-glow">
-            SEVEN <span className="text-netflix-red">D</span> ADMIN
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          {classData && (
+      <div className="md:hidden flex flex-col bg-neutral-950 border-b border-neutral-900 z-20 flex-shrink-0 w-full">
+        <div className="flex items-center justify-between px-5 py-4">
+          <div className="flex items-center gap-3">
             <button
-              onClick={() => handleSaveChanges(classData)}
-              disabled={loading}
-              className="px-3 py-1.5 bg-netflix-red/10 border border-netflix-red/30 text-netflix-red hover:bg-netflix-red hover:text-white rounded-lg transition-all flex items-center gap-1.5 text-xs font-bold active:scale-95"
-              title="Simpan Semua"
+              onClick={() => setIsMobileNavOpen(true)}
+              className="p-2 -ml-2 text-gray-400 hover:text-white rounded-lg focus:outline-none hover:bg-white/5 active:scale-95 transition-all"
             >
-              <Save size={14} />
-              <span>Simpan</span>
+              <Menu size={20} />
             </button>
-          )}
-          <button
-            onClick={onClose}
-            className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/5"
-            title="Kembali ke Web"
-          >
-            <LogOut size={16} />
-          </button>
+            <span className="text-sm font-black tracking-widest text-glow">
+              SEVEN <span className="text-netflix-red">D</span> ADMIN
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            {classData && (
+              <button
+                onClick={() => handleSaveChanges(classData)}
+                disabled={loading}
+                className="px-3 py-1.5 bg-netflix-red/10 border border-netflix-red/30 text-netflix-red hover:bg-netflix-red hover:text-white rounded-lg transition-all flex items-center gap-1.5 text-xs font-bold active:scale-95"
+                title="Simpan Semua"
+              >
+                <Save size={14} />
+                <span>Simpan</span>
+              </button>
+            )}
+            <button
+              onClick={onClose}
+              className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/5"
+              title="Kembali ke Web"
+            >
+              <LogOut size={16} />
+            </button>
+          </div>
+        </div>
+
+        {/* Swipeable Tabs Bar */}
+        <div className="flex items-center gap-2 overflow-x-auto px-5 pb-3.5 pt-0.5 scrollbar-none">
+          {[
+            { id: "siswa", name: "Siswa", icon: <Users size={14} /> },
+            { id: "piket", name: "Piket", icon: <Calendar size={14} /> },
+            { id: "timeline", name: "Timeline", icon: <Clock size={14} /> },
+            { id: "galeri", name: "Galeri", icon: <Image size={14} /> },
+            { id: "video", name: "Video", icon: <Video size={14} /> },
+            { id: "pengumuman", name: "Mading", icon: <Megaphone size={14} /> },
+            { id: "teks", name: "Settings", icon: <FileText size={14} /> },
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => {
+                setActiveTab(tab.id);
+                setEditingStudent(null);
+                setEditingTimeline(null);
+                setEditingGallery(null);
+                setEditingVideo(null);
+                setEditingAnn(null);
+              }}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold whitespace-nowrap transition-all border ${
+                activeTab === tab.id
+                  ? "bg-netflix-red text-white border-netflix-red shadow-md shadow-netflix-red/20"
+                  : "bg-neutral-900 text-gray-400 border-neutral-800/80"
+              }`}
+            >
+              {tab.icon}
+              <span>{tab.name}</span>
+            </button>
+          ))}
         </div>
       </div>
 
@@ -545,7 +580,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
       </div>
 
       {/* Main Panel Content Area */}
-      <div className="flex-1 overflow-y-auto bg-[#0E0E0E] p-6 md:p-10 relative">
+      <div className="flex-1 overflow-y-auto bg-[#0E0E0E] p-4 md:p-10 relative">
         {/* Saved Toast Alert */}
         <AnimatePresence>
           {saveSuccess && (
@@ -636,7 +671,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
                 <AnimatePresence>
                   {editingStudent && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative">
+                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto scrollbar-none">
                         <h4 className="text-lg font-bold mb-4">
                           {editingStudent.id ? "Edit Data Siswa" : "Tambah Siswa Baru"}
                         </h4>
@@ -883,7 +918,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
                 <AnimatePresence>
                   {editingTimeline && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative">
+                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto scrollbar-none">
                         <h4 className="text-lg font-bold mb-4">
                           {editingTimeline.id ? "Edit Agenda Timeline" : "Tambah Agenda Baru"}
                         </h4>
@@ -1022,7 +1057,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
                 <AnimatePresence>
                   {editingGallery && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative">
+                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto scrollbar-none">
                         <h4 className="text-lg font-bold mb-4">
                           {editingGallery.id ? "Edit Foto Galeri" : "Tambah Foto Baru"}
                         </h4>
@@ -1153,7 +1188,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
                 <AnimatePresence>
                   {editingVideo && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative">
+                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto scrollbar-none">
                         <h4 className="text-lg font-bold mb-4">
                           {editingVideo.id ? "Edit Video Kenangan" : "Tambah Video Baru"}
                         </h4>
@@ -1300,7 +1335,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
                 <AnimatePresence>
                   {editingAnn && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative">
+                      <div className="bg-[#0F0F0F] border border-neutral-800 w-full max-w-xl rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto scrollbar-none">
                         <h4 className="text-lg font-bold mb-4">
                           {editingAnn.id ? "Edit Pengumuman" : "Tambah Pengumuman Mading"}
                         </h4>
