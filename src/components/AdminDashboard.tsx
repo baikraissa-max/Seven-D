@@ -73,18 +73,24 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
       });
-      const data = await res.json();
-
-      if (data.success) {
-        localStorage.setItem("sevend_admin_token", data.token);
-        setToken(data.token);
-        setIsAuthenticated(true);
-        fetchClassData();
+      
+      const contentType = res.headers.get("content-type");
+      if (contentType && contentType.includes("application/json")) {
+        const data = await res.json();
+        if (data.success) {
+          localStorage.setItem("sevend_admin_token", data.token);
+          setToken(data.token);
+          setIsAuthenticated(true);
+          fetchClassData();
+        } else {
+          setError(data.error || "Password salah!");
+        }
       } else {
-        setError(data.error || "Password salah!");
+        const text = await res.text();
+        setError(`Respon server tidak valid (${res.status}): ${text.substring(0, 40)}...`);
       }
     } catch (err) {
-      setError("Gagal tersambung ke server.");
+      setError("Gagal tersambung ke server. Silakan muat ulang halaman.");
     } finally {
       setLoading(false);
     }
