@@ -18,7 +18,9 @@ import {
   Megaphone,
   ChevronRight,
   Eye,
-  EyeOff
+  EyeOff,
+  Menu,
+  X
 } from "lucide-react";
 import { Student, PiketDay, TimelineEvent, GalleryItem, VideoItem, ClassData, Announcement } from "../types";
 
@@ -38,6 +40,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
   // Class data edit states
   const [classData, setClassData] = useState<ClassData | null>(null);
   const [activeTab, setActiveTab] = useState("siswa"); // 'siswa', 'piket', 'timeline', 'galeri', 'video', 'pengumuman', 'teks'
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   // Modal / form states for editing items
   const [editingStudent, setEditingStudent] = useState<Partial<Student> | null>(null);
@@ -400,8 +403,55 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
 
   return (
     <div className="fixed inset-0 z-50 bg-[#0B0B0B] text-white overflow-hidden flex flex-col md:flex-row">
+      {/* Mobile Sidebar Backdrop */}
+      {isMobileNavOpen && (
+        <div
+          onClick={() => setIsMobileNavOpen(false)}
+          className="fixed inset-0 z-30 bg-black/70 backdrop-blur-sm md:hidden"
+        />
+      )}
+
+      {/* Mobile Sticky Header Bar */}
+      <div className="md:hidden flex items-center justify-between px-5 py-4 bg-neutral-950 border-b border-neutral-900 z-20 flex-shrink-0 w-full">
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setIsMobileNavOpen(true)}
+            className="p-2 -ml-2 text-gray-400 hover:text-white rounded-lg focus:outline-none hover:bg-white/5 active:scale-95 transition-all"
+          >
+            <Menu size={20} />
+          </button>
+          <span className="text-sm font-black tracking-widest text-glow">
+            SEVEN <span className="text-netflix-red">D</span> ADMIN
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          {classData && (
+            <button
+              onClick={() => handleSaveChanges(classData)}
+              disabled={loading}
+              className="px-3 py-1.5 bg-netflix-red/10 border border-netflix-red/30 text-netflix-red hover:bg-netflix-red hover:text-white rounded-lg transition-all flex items-center gap-1.5 text-xs font-bold active:scale-95"
+              title="Simpan Semua"
+            >
+              <Save size={14} />
+              <span>Simpan</span>
+            </button>
+          )}
+          <button
+            onClick={onClose}
+            className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/5"
+            title="Kembali ke Web"
+          >
+            <LogOut size={16} />
+          </button>
+        </div>
+      </div>
+
       {/* Sidebar Navigation */}
-      <div className="w-full md:w-64 bg-neutral-950 border-r border-neutral-900 p-6 flex flex-col justify-between flex-shrink-0">
+      <div
+        className={`fixed inset-y-0 left-0 z-40 w-72 bg-neutral-950 border-r border-neutral-900 p-6 flex flex-col justify-between transition-transform duration-300 transform md:relative md:translate-x-0 md:w-64 flex-shrink-0 ${
+          isMobileNavOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+        }`}
+      >
         <div>
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
@@ -409,10 +459,10 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
               SEVEN <span className="text-netflix-red">D</span> ADMIN
             </span>
             <button
-              onClick={onClose}
-              className="md:hidden text-gray-400 hover:text-white"
+              onClick={() => setIsMobileNavOpen(false)}
+              className="md:hidden text-gray-400 hover:text-white p-1 hover:bg-white/5 rounded-lg transition-colors"
             >
-              Tutup
+              <X size={18} />
             </button>
           </div>
 
@@ -436,6 +486,7 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
                   setEditingGallery(null);
                   setEditingVideo(null);
                   setEditingAnn(null);
+                  setIsMobileNavOpen(false); // Close on select
                 }}
                 className={`w-full text-left px-4 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider flex items-center gap-3 transition-colors ${
                   activeTab === tab.id
@@ -453,7 +504,10 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
         {/* Action Bottom */}
         <div className="pt-6 border-t border-neutral-900 space-y-3">
           <button
-            onClick={() => handleSaveChanges(classData!)}
+            onClick={() => {
+              if (classData) handleSaveChanges(classData);
+              setIsMobileNavOpen(false);
+            }}
             disabled={loading}
             className="w-full bg-netflix-red text-white py-2.5 rounded-xl font-bold text-xs tracking-wider uppercase hover:bg-red-700 transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
           >
@@ -462,7 +516,10 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
           </button>
 
           <button
-            onClick={handleLogout}
+            onClick={() => {
+              handleLogout();
+              setIsMobileNavOpen(false);
+            }}
             className="w-full bg-neutral-900 text-gray-400 hover:text-white py-2.5 rounded-xl font-bold text-xs tracking-wider uppercase hover:bg-neutral-850 transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
           >
             <LogOut size={14} />
@@ -470,7 +527,10 @@ export default function AdminDashboard({ onClose, onRefreshData }: AdminDashboar
           </button>
 
           <button
-            onClick={onClose}
+            onClick={() => {
+              onClose();
+              setIsMobileNavOpen(false);
+            }}
             className="w-full border border-neutral-800 text-gray-400 hover:text-white py-2.5 rounded-xl font-bold text-xs tracking-wider uppercase hover:bg-neutral-900 transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
           >
             Kembali ke Web
