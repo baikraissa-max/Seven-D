@@ -1,0 +1,6 @@
+{
+  "name": "SEVEN D",
+  "description": "Website resmi kelas SEVEN D dengan visualisasi modern bertema Netflix dan Apple. Dilengkapi mading digital, daftar siswa, piket harian, galeri foto, timeline perjalanan kelas, dan dashboard admin rahasia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

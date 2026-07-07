@@ -1,0 +1,556 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "absentNo": 1,
+      "name": "ACHMAD FERNANDO FEBRIANSYAH",
+      "nickname": "Nando",
+      "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Koding & Olahraga",
+      "dream": "Full Stack Developer",
+      "quote": "Tantangan adalah peluang untuk membuktikan seberapa jauh kita bisa melangkah."
+    },
+    {
+      "id": "2",
+      "absentNo": 2,
+      "name": "ADLIAN ROMADHON PRADIPTA PRATAMA",
+      "nickname": "Adli",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Menulis Puisi & Membaca",
+      "dream": "Sastrawan / Jurnalis",
+      "quote": "Setiap kata yang ditulis adalah jejak keabadian jiwa."
+    },
+    {
+      "id": "3",
+      "absentNo": 3,
+      "name": "AHMAD FADHIL ARIFANSYAH",
+      "nickname": "Fadhil",
+      "avatar": "/uploads/289113_1783397511239.jpg",
+      "hobby": "Bermain Game & Pemrograman",
+      "dream": "Software Engineer di Google",
+      "quote": "Hari esok harus lebih baik dari hari ini. Mulai dengan baris kode pertama."
+    },
+    {
+      "id": "4",
+      "absentNo": 4,
+      "name": "AHMAD HAFIZ MAULANA",
+      "nickname": "Hafiz",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Sepak Bola & Futsal",
+      "dream": "Pemain Sepak Bola Profesional / Pengusaha",
+      "quote": "Kerja keras mengalahkan bakat ketika bakat tidak bekerja keras."
+    },
+    {
+      "id": "5",
+      "absentNo": 5,
+      "name": "AHMAD YUSUF HAMDANI",
+      "nickname": "Yusuf",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Membaca Buku Sejarah & Novel",
+      "dream": "Dosen / Penulis",
+      "quote": "Masa lalu adalah guru terbaik untuk melangkah ke masa depan."
+    },
+    {
+      "id": "6",
+      "absentNo": 6,
+      "name": "AKMAL REIHAN SYAPUTRA",
+      "nickname": "Akmal",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Fotografi & Sinematografi",
+      "dream": "Sutradara Film",
+      "quote": "Tangkap setiap momen indah, karena ia tidak akan terulang dua kali."
+    },
+    {
+      "id": "7",
+      "absentNo": 7,
+      "name": "ALDEBARAN NABHAN AFANDI",
+      "nickname": "Baran",
+      "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Bermain Musik & Gitar",
+      "dream": "Musisi Klasik",
+      "quote": "Musik mengekspresikan apa yang tidak bisa diucapkan dengan kata-kata."
+    },
+    {
+      "id": "8",
+      "absentNo": 8,
+      "name": "ALIFAHRIZA SENOJI",
+      "nickname": "Alif",
+      "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Desain Grafis",
+      "dream": "Art Director",
+      "quote": "Desain yang baik adalah yang tidak terlihat tetapi terasa fungsinya."
+    },
+    {
+      "id": "9",
+      "absentNo": 9,
+      "name": "AULIA HADI ANANDITA",
+      "nickname": "Aulia",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Memasak & Baking",
+      "dream": "Chef Profesional / Pemilik Restoran",
+      "quote": "Makanan terbaik dimasak dengan cinta dan ketulusan hati."
+    },
+    {
+      "id": "10",
+      "absentNo": 10,
+      "name": "CALLISTA FIDELLA JESSE",
+      "nickname": "Callista",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Seni Lukis & Desain",
+      "dream": "Arsitek Terkenal",
+      "quote": "Keindahan seni terletak pada detail dan imajinasi yang tulus."
+    },
+    {
+      "id": "11",
+      "absentNo": 11,
+      "name": "DINDA RAHMAWATI",
+      "nickname": "Dinda",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Menari Tradisional",
+      "dream": "Budayawan / Diplomat",
+      "quote": "Melestarikan budaya adalah bentuk cinta tanah air tertinggi."
+    },
+    {
+      "id": "12",
+      "absentNo": 12,
+      "name": "FAILA QURROTA A'YUN",
+      "nickname": "Faila",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Sains & Eksperimen",
+      "dream": "Peneliti / Saintis",
+      "quote": "Selalu ada rasa ingin tahu di balik setiap penemuan besar."
+    },
+    {
+      "id": "13",
+      "absentNo": 13,
+      "name": "FARAMIR AIOLIA KAZARINE ILMIAWAN",
+      "nickname": "Faramir",
+      "avatar": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Membaca Manga & Menggambar",
+      "dream": "Komikus / Animator",
+      "quote": "Imajinasi adalah kekuatan tanpa batas manusia."
+    },
+    {
+      "id": "14",
+      "absentNo": 14,
+      "name": "HANIFATUSH SHAFIRA",
+      "nickname": "Hani",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Menyanyi & Cover Lagu",
+      "dream": "Penyanyi / Vocal Coach",
+      "quote": "Bernyanyilah dengan hati, maka suaramu akan menyentuh jiwa orang lain."
+    },
+    {
+      "id": "15",
+      "absentNo": 15,
+      "name": "KAYLA AGUSTINA RAMADHANI",
+      "nickname": "Kayla",
+      "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Traveling & Blogging",
+      "dream": "Travel Blogger / Jurnalis Internasional",
+      "quote": "Dunia ini terlalu indah untuk dilewatkan tanpa petualangan."
+    },
+    {
+      "id": "16",
+      "absentNo": 16,
+      "name": "KEYSHA NOUREN ALFARIZQI MANDA PUTRA",
+      "nickname": "Keysha",
+      "avatar": "https://images.unsplash.com/photo-1506803682981-6e718a9dd3ee?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Bulu Tangkis",
+      "dream": "Atlet Nasional / Fisioterapis",
+      "quote": "Setiap tetes keringat hari ini adalah kesuksesan hari esok."
+    },
+    {
+      "id": "17",
+      "absentNo": 17,
+      "name": "LAIRE ARUNA CIPTA BATARI",
+      "nickname": "Laire",
+      "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Astronomi & Menatap Bintang",
+      "dream": "Astropisikawan / Angkasawan",
+      "quote": "Lihatlah ke atas bintang-bintang, bukan ke bawah kakimu."
+    },
+    {
+      "id": "18",
+      "absentNo": 18,
+      "name": "LAQUEENTA KHALISHA PUTRI",
+      "nickname": "Queenta",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Mempelajari Bahasa Asing",
+      "dream": "Penerjemah PBB / Diplomat",
+      "quote": "Bahasa baru membuka gerbang dunia baru bagi kita."
+    },
+    {
+      "id": "19",
+      "absentNo": 19,
+      "name": "LUNA AURELIA AGATHA",
+      "nickname": "Luna",
+      "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Menulis Novel",
+      "dream": "Penulis Best Seller",
+      "quote": "Melalui tulisan, aku bisa menciptakan dunia yang kuinginkan."
+    },
+    {
+      "id": "20",
+      "absentNo": 20,
+      "name": "MARISCHA NAURAH RAYYANI",
+      "nickname": "Marischa",
+      "avatar": "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Bermain Piano",
+      "dream": "Pianis Profesional / Komposer",
+      "quote": "Setiap tuts hitam dan putih merajut harmoni kehidupan."
+    },
+    {
+      "id": "21",
+      "absentNo": 21,
+      "name": "NADIA NOOR ANGGRAINI",
+      "nickname": "Nadia",
+      "avatar": "https://images.unsplash.com/photo-1541647376583-d9330e77d3f3?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Fotografi Alam",
+      "dream": "Arsitek Lanskap",
+      "quote": "Keindahan alam adalah mahakarya seni yang tak tertandingi."
+    },
+    {
+      "id": "22",
+      "absentNo": 22,
+      "name": "NAFA SEPTIA",
+      "nickname": "Nafa",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Menggambar Karakter",
+      "dream": "Ilustrator Buku Anak / Game Artist",
+      "quote": "Goresan pensil hari ini adalah senyuman di masa depan."
+    },
+    {
+      "id": "23",
+      "absentNo": 23,
+      "name": "NATASYAH ANDIVA PUTRI WINATA",
+      "nickname": "Tasya",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Seni Desain Fashion",
+      "dream": "Fashion Designer",
+      "quote": "Gaya adalah cara untuk mengatakan siapa dirimu tanpa harus berbicara."
+    },
+    {
+      "id": "24",
+      "absentNo": 24,
+      "name": "NOVIANDRA DWI ALVINA PUTRA",
+      "nickname": "Andra",
+      "avatar": "https://images.unsplash.com/photo-1489980508314-941910ded1f4?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Otomotif & Modifikasi",
+      "dream": "Insinyur Mesin / Pembalap",
+      "quote": "Kecepatan memang menantang, tapi keselamatan tetap utama."
+    },
+    {
+      "id": "25",
+      "absentNo": 25,
+      "name": "RAIHAN FADLUR ROCHMAN",
+      "nickname": "Raihan",
+      "avatar": "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Basket & Kalistenik",
+      "dream": "Pelatih Fisik / Pebisnis",
+      "quote": "Tubuh yang kuat melahirkan pikiran yang tangguh."
+    },
+    {
+      "id": "26",
+      "absentNo": 26,
+      "name": "RAISSA ADITYA PRATAMA",
+      "nickname": "Raissa",
+      "avatar": "https://images.unsplash.com/photo-1500048993953-d23a436266cf?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Koding & Robotika",
+      "dream": "Insinyur Robotika / AI Expert",
+      "quote": "Masa depan dibentuk oleh apa yang kita bangun hari ini."
+    },
+    {
+      "id": "27",
+      "absentNo": 27,
+      "name": "RALLEN DASHA NATHAN ISLAMY",
+      "nickname": "Rallen",
+      "avatar": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Catur & Matematika",
+      "dream": "Aktuaris / Analis Data",
+      "quote": "Kehidupan bagaikan papan catur, setiap langkah membutuhkan perhitungan matang."
+    },
+    {
+      "id": "28",
+      "absentNo": 28,
+      "name": "ROBIN DWI YUDISTIRA",
+      "nickname": "Robin",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Seni Bela Diri Karate",
+      "dream": "Polisi / Pemimpin Komunitas",
+      "quote": "Kekuatan sejati bukanlah untuk menindas, melainkan melindungi."
+    },
+    {
+      "id": "29",
+      "absentNo": 29,
+      "name": "ROEL ARON FAHAR",
+      "nickname": "Roel",
+      "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Desain 3D & Gaming",
+      "dream": "3D Environment Artist",
+      "quote": "Membangun dunia impian lewat model 3 dimensi."
+    },
+    {
+      "id": "30",
+      "absentNo": 30,
+      "name": "SALSABILAH RAMADHANI MURTADHO",
+      "nickname": "Salsa",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Seni Lipat Kertas (Origami)",
+      "dream": "Psikolog Anak",
+      "quote": "Setiap lipatan kertas mengajarkan tentang kesabaran dan ketelitian."
+    },
+    {
+      "id": "31",
+      "absentNo": 31,
+      "name": "SITI NAGIA CIKA OKTAVIANI",
+      "nickname": "Cika",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Blogging & Review Buku",
+      "dream": "Editor Buku / Content Creator",
+      "quote": "Buku adalah jembatan emas menuju ilmu pengetahuan tak terbatas."
+    },
+    {
+      "id": "32",
+      "absentNo": 32,
+      "name": "SITI ROHMA",
+      "nickname": "Rohma",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Bercocok Tanam",
+      "dream": "Ahli Botani / Pengusaha Agribisnis",
+      "quote": "Menanam satu pohon hari ini berarti mengalirkan kehidupan masa depan."
+    },
+    {
+      "id": "33",
+      "absentNo": 33,
+      "name": "VELLANEA SELLISHA PUTRI",
+      "nickname": "Vella",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Menggambar Digital",
+      "dream": "Concept Artist di Industri Game",
+      "quote": "Warna-warni dunia fantasi kuungkapkan lewat kanvas digital."
+    },
+    {
+      "id": "34",
+      "absentNo": 34,
+      "name": "YUSUF BAYU SAPUTRA",
+      "nickname": "Bayu",
+      "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Sepeda Gunung & Outbound",
+      "dream": "Wirausahawan Sukses",
+      "quote": "Jangan takut jatuh, karena jatuh mengajarkan cara bangkit kembali."
+    },
+    {
+      "id": "35",
+      "absentNo": 35,
+      "name": "ZAHROTUL ATIYYAH FIRDAUS",
+      "nickname": "Zahra",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "hobby": "Menulis Kaligrafi",
+      "dream": "Desainer Produk / Kaligrafer",
+      "quote": "Keindahan tulisan tangan mencerminkan kedamaian dalam pikiran."
+    }
+  ],
+  "piket": [
+    {
+      "id": "senin",
+      "dayName": "Senin",
+      "members": [
+        "ACHMAD FERNANDO FEBRIANSYAH",
+        "ADLIAN ROMADHON PRADIPTA PRATAMA",
+        "AHMAD FADHIL ARIFANSYAH",
+        "AHMAD HAFIZ MAULANA",
+        "AHMAD YUSUF HAMDANI",
+        "AKMAL REIHAN SYAPUTRA",
+        "ALDEBARAN NABHAN AFANDI"
+      ]
+    },
+    {
+      "id": "selasa",
+      "dayName": "Selasa",
+      "members": [
+        "ALIFAHRIZA SENOJI",
+        "AULIA HADI ANANDITA",
+        "CALLISTA FIDELLA JESSE",
+        "DINDA RAHMAWATI",
+        "FAILA QURROTA A'YUN",
+        "FARAMIR AIOLIA KAZARINE ILMIAWAN",
+        "HANIFATUSH SHAFIRA"
+      ]
+    },
+    {
+      "id": "rabu",
+      "dayName": "Rabu",
+      "members": [
+        "KAYLA AGUSTINA RAMADHANI",
+        "KEYSHA NOUREN ALFARIZQI MANDA PUTRA",
+        "LAIRE ARUNA CIPTA BATARI",
+        "LAQUEENTA KHALISHA PUTRI",
+        "LUNA AURELIA AGATHA",
+        "MARISCHA NAURAH RAYYANI",
+        "NADIA NOOR ANGGRAINI"
+      ]
+    },
+    {
+      "id": "kamis",
+      "dayName": "Kamis",
+      "members": [
+        "NAFA SEPTIA",
+        "NATASYAH ANDIVA PUTRI WINATA",
+        "NOVIANDRA DWI ALVINA PUTRA",
+        "RAIHAN FADLUR ROCHMAN",
+        "RAISSA ADITYA PRATAMA",
+        "RALLEN DASHA NATHAN ISLAMY",
+        "ROBIN DWI YUDISTIRA"
+      ]
+    },
+    {
+      "id": "jumat",
+      "dayName": "Jumat",
+      "members": [
+        "ROEL ARON FAHAR",
+        "SALSABILAH RAMADHANI MURTADHO",
+        "SITI NAGIA CIKA OKTAVIANI",
+        "SITI ROHMA",
+        "VELLANEA SELLISHA PUTRI",
+        "YUSUF BAYU SAPUTRA",
+        "ZAHROTUL ATIYYAH FIRDAUS"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "tl_1",
+      "title": "Hari Pertama Masuk Kelas",
+      "date": "Juli 2025",
+      "description": "Awal perjalanan panjang SEVEN D dimulai. Berkenalan dengan teman sebangku dan wali kelas tercinta.",
+      "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "tl_2",
+      "title": "Kemenangan Lomba HUT RI",
+      "date": "Agustus 2025",
+      "description": "Kekompakan SEVEN D teruji dalam berbagai lomba kemerdekaan. Kami berhasil membawa pulang trofi juara bakiak!",
+      "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "tl_3",
+      "title": "Class Meeting Seru",
+      "date": "Desember 2025",
+      "description": "Ketegangan dan kemeriahan lomba tarik tambang serta futsal antarkelas. Gemuruh teriakan suporter tak terlupakan.",
+      "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "tl_4",
+      "title": "Study Tour Bersejarah",
+      "date": "Februari 2026",
+      "description": "Menjelajahi keindahan budaya, belajar langsung di museum, dan ditutup dengan menikmati senja bersama di pantai.",
+      "image: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "tl_5",
+      "title": "Ujian Akhir Semester",
+      "date": "Juni 2026",
+      "description": "Momen perjuangan bersama, belajar kelompok, saling berbagi catatan, demi mencapai hasil terbaik.",
+      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "tl_6",
+      "title": "Foto Bersama Kelas",
+      "date": "Juni 2026",
+      "description": "Sesi foto kelas dengan tema hitam kasual elegan yang sinematik. Abadi dalam bingkai tawa.",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "tl_7",
+      "title": "Kenaikan Kelas & Puncak Perjalanan",
+      "date": "Juli 2026",
+      "description": "SEVEN D resmi naik kelas! Persahabatan erat yang terjalin selama setahun penuh akan terus hidup selamanya.",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g_1",
+      "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80",
+      "title": "Keceriaan Saat Belajar Kelompok",
+      "description": "Kerja kelompok mengerjakan proyek sains bersama."
+    },
+    {
+      "id": "g_2",
+      "url": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80",
+      "title": "Canda Tawa di Sela Jam Istirahat",
+      "description": "Kumpul bersama di koridor sekolah sambil berbagi bekal."
+    },
+    {
+      "id": "g_3",
+      "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+      "title": "Kerja Bakti Menghias Kelas",
+      "description": "Dekorasi mading menyambut HUT RI dengan tema merah putih."
+    },
+    {
+      "id": "g_4",
+      "url": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
+      "title": "Suporter Heboh SEVEN D",
+      "description": "Dukungan penuh saat tim futsal kelas bertanding di lapangan."
+    },
+    {
+      "id": "g_5",
+      "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+      "title": "Wajah-Wajah Lelah Tapi Bahagia",
+      "description": "Selesai ujian akhir semester, semua tersenyum bebas."
+    },
+    {
+      "id": "g_6",
+      "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80",
+      "title": "Persahabatan Tanpa Batas",
+      "description": "Foto bersama di pelataran sekolah seusai pembagian raport."
+    }
+  ],
+  "videos": [
+    {
+      "id": "v_1",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80",
+      "title": "Cinematic Reel SEVEN D 2025/2026",
+      "description": "Kompilasi momen-momen seru, haru, dan gembira kelas SEVEN D sepanjang tahun pelajaran berjalan."
+    },
+    {
+      "id": "v_2",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+      "title": "Dokumenter Singkat Study Tour",
+      "description": "Perjalanan seru kami menjelajahi keindahan budaya dan kebersamaan di pantai."
+    }
+  ],
+  "stats": {
+    "studentsCount": 35,
+    "homeroomTeacher": "Ibu Sri Wahyuni, S.Pd.",
+    "photosCount": 104,
+    "videosCount": 24
+  },
+  "config": {
+    "logoText": "SEVEN D",
+    "subtitleText": "Bukan hanya sebuah kelas, tetapi tempat lahirnya persahabatan, cerita, dan kenangan yang tak terlupakan.",
+    "bgImageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80",
+    "tiktokUrl": "https://www.tiktok.com/@pitu_d07",
+    "instagramUrl": "https://www.instagram.com/classsevendee",
+    "piketSchedule": [],
+    "announcements": [
+      {
+        "id": "ann_1",
+        "title": "Pengumuman Pembagian Raport",
+        "content": "Raport semester genap akan dibagikan pada hari Jumat pukul 08:00 WIB. Harap hadir tepat waktu didampingi orang tua/wali murid.",
+        "date": "2026-07-01",
+        "isActive": true
+      },
+      {
+        "id": "ann_2",
+        "title": "Pakaian Seragam Foto Bersama",
+        "content": "Untuk sesi foto kelas besok hari Selasa, harap menggunakan kemeja kasual hitam polos dan celana jins gelap.",
+        "date": "2026-06-25",
+        "isActive": true
+      }
+    ]
+  }
+}
